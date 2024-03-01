@@ -338,14 +338,16 @@ nav i{
 @media (max-width: 1299px){
     .sidebar {width: 25%;}
     .BOX { padding-left: calc(25% + 15px);}
+    .divison25{width: 50% !important;}
+    .divison50{width: 100% !important;}
+    .divison75{width: 50% !important;}
+    .ficha{width: 100% !important;}
+    .client-rest{width: 100% !important;}
 }
 @media (max-width: 765px){
     .sidebar {display: none;}
     .where-row {display: none;}
     .BOX{margin-top: 70px !important; padding-left: 15px;}
-    .divison25{width: 50% !important;}
-    .divison50{width: 100% !important;}
-    .divison75{width: 50% !important;}
 }
 
 .sidebar-profile{
@@ -599,6 +601,9 @@ nav i{
 }
 .table td,th{
     padding: 0.5rem;
+}
+.table td{
+    word-break: break-all;
 }
 /*----- Start Ficha Cliente ------*/
 .img-client{

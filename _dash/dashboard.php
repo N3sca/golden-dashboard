@@ -252,7 +252,6 @@
                                 <th>NIF</th>
                                 <th>Ramo</th>
                                 <th>Apólice</th>
-                                <th>Data C.</th>
                                 <th>Data R.</th>
                             </tr>
                         </thead>
@@ -261,7 +260,6 @@
                                 <td>616465464</td>
                                 <td>Vida Crédito</td>
                                 <td>April - 5845115</td>
-                                <td>2024/04/02</td>
                                 <td>2025/04/02</td>
                                 <td><input type="button" value="Ficha" onclick="sidemenu('BD1'); ficha('616465464')"></td>
                             </tr>
@@ -269,7 +267,6 @@
                                 <td>616465464</td>
                                 <td>Multirriscos</td>
                                 <td>April - 5845115</td>
-                                <td>2024/04/02</td>
                                 <td>2025/04/02</td>
                                 <td><input type="button" value="Ficha" onclick="sidemenu('BD1'); ficha('616465464')"></td>
                             </tr>
@@ -277,7 +274,6 @@
                                 <td>616465464</td>
                                 <td>Vida Crédito</td>
                                 <td>April - 5845115</td>
-                                <td>2024/04/02</td>
                                 <td>2025/04/02</td>
                                 <td><input type="button" value="Ficha" onclick="sidemenu('BD1'); ficha('616465464')"></td>
                             </tr>
@@ -298,7 +294,6 @@
                                 <th>NIF</th>
                                 <th>Ramo</th>
                                 <th>Apólice</th>
-                                <th>Data C.</th>
                                 <th>Data R.</th>
                             </tr>
                         </thead>
@@ -307,7 +302,6 @@
                                 <td>616465464</td>
                                 <td>Vida Crédito</td>
                                 <td>April - 5845115</td>
-                                <td>2024/04/02</td>
                                 <td>2025/04/02</td>
                                 <td><input type="button" value="Ficha" onclick="sidemenu('BD1');ficha('616465464')"></td>
                             </tr>
@@ -315,7 +309,6 @@
                                 <td>616465464</td>
                                 <td>Multirriscos</td>
                                 <td>April - 5845115</td>
-                                <td>2024/04/02</td>
                                 <td>2025/04/02</td>
                                 <td><input type="button" value="Ficha" onclick="sidemenu('BD1');ficha('616465464')"></td>
                             </tr>
@@ -323,7 +316,6 @@
                                 <td>616465464</td>
                                 <td>Vida Crédito</td>
                                 <td>April - 5845115</td>
-                                <td>2024/04/02</td>
                                 <td>2025/04/02</td>
                                 <td><input type="button" value="Ficha" onclick="sidemenu('BD1');ficha('616465464')"></td>
                             </tr>
@@ -547,7 +539,7 @@
                 </div>
             </div>
         </div>
-        <div class="divison25">
+        <div class="divison25 ficha">
             <div class="panel">
                 <div class="panel-bottom text-center flex-column">
                     <div class="border-bottom flex-column">
@@ -586,7 +578,7 @@
                 <div class="panel-head"><h5><i class="fa-solid fa-circle-check"></i> CONTACTADO!</h5></div>
             </div>
         </div>
-        <div class="divison75">
+        <div class="divison75 ficha">
             <div class="panel">
                 <div class="panel-bottom" style="text-align:left;">
                     <table class="table">
