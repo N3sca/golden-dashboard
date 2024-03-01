@@ -18,13 +18,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dashboard">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon_180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/icons/apple-touch-icon_167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-touch-icon_152x152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-touch-icon_120x120.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="194x194" href="assets/icons/favicon-194x194.png">
     <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#0c5647">
 
     <link rel="manifest" href="manifest.json">
+
 
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#b19859">
