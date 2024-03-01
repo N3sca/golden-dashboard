@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    //echo session_id();
+    //echo "<pre>";
+    //print_r($_SESSION);
+    //echo "</pre>";
+    //echo "<pre>";
+    //print_r($_POST);
+    //echo "</pre>";
+    //echo "<pre>";
+    //print_r($_GET);
+    //echo "</pre>";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
