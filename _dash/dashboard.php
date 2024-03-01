@@ -10,6 +10,9 @@
     //echo "<pre>";
     //print_r($_GET);
     //echo "</pre>";
+
+    header('Cache-Control: max-age=86400');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -75,14 +78,14 @@
         <ul class="sidebar-menu">
             <li class="sidebar-item"><a href="#" id="Dashboard" class="active" onclick="sidemenu('Dashboard1')" aria-label="Dashboard"><i class="fa fa-dashboard"></i>Dashboard</a></li>
             <li class="sidebar-item"><a href="#" id="Revisao" class="" onclick="sidemenu('Revisao1')" aria-label="Revisão"><i class="fa-solid fa-triangle-exclamation"></i>Revisão</a></li>
-            <li class="sidebar-item"><a href="#" id="Insercao" onclick="collapse('collapseIN'); return false;" aria-label="Base de Dados"><i class="fa-solid fa-download"></i>Inserção BD<span data-toggle="collapse" href="#sub-item-1" class="pull-right"><em class="fa fa-plus"></em></span></a>
+            <li class="sidebar-item"><a href="#" id="Insercao" onclick="collapse('collapseIN'); return false;" aria-label="Base de Dados"><i class="fa-solid fa-download"></i>Inserção BD<span data-toggle="collapse" href="#sub-item-1" class="pull-right"><em class="fa-solid fa-plus"></em></span></a>
                 <ul id="collapseIN" class="collapse">
                     <li><a class="sidebar-item2" href="#" class="" onclick="sidemenu('Insercao1'); collapse('collapseIN')" aria-label="Ficha Cliente"><i class="fa-solid fa-address-card"></i>Ficha Cliente</a></li>
                     <li><a class="sidebar-item2" href="#" class="" onclick="sidemenu('Insercao2'); collapse('collapseIN')" aria-label="Utilidade"><i class="fa-solid fa-shield-heart"></i>Apólices</a></li>
                     <li><a class="sidebar-item2" href="#" class="" onclick="sidemenu('Insercao3'); collapse('collapseIN')" aria-label="Tabelação"><i class="fa-solid fa-hand-holding-dollar"></i>Créditos</a></li>
                 </ul>
             </li>
-            <li class="sidebar-item"><a href="#" id="BD" onclick="collapse('collapseBD'); return false;" aria-label="Base de Dados"><i class="fa-solid fa-database"></i>Base de Dados<span data-toggle="collapse" href="#sub-item-1" class="pull-right"><em class="fa fa-plus"></em></span></a>
+            <li class="sidebar-item"><a href="#" id="BD" onclick="collapse('collapseBD'); return false;" aria-label="Base de Dados"><i class="fa-solid fa-database"></i>Base de Dados<span data-toggle="collapse" href="#sub-item-1" class="pull-right"><em class="fa-solid fa-plus"></em></span></a>
                 <ul id="collapseBD" class="collapse">
                     <li><a class="sidebar-item2" href="#" class="" onclick="sidemenu('BD1'); collapse('collapseBD')" aria-label="Ficha Cliente"><i class="fa-solid fa-address-card"></i>Ficha Cliente</a></li>
                     <li><a class="sidebar-item2" href="#" class="" onclick="sidemenu('BD2'); collapse('collapseBD')" aria-label="Utilidade"><i class="fa-solid fa-folder-open"></i>Utilidade</a></li>
@@ -393,7 +396,7 @@
                     </div>
                 </div>
             </div>
-            <div class="divison25">
+            <div class="divison50">
                 <div class="panel">
                     <div class="panel-head">
                         <div class="input-nav">
@@ -443,7 +446,7 @@
                 </div>
             </div>
         </div>
-        <div class="divison25">
+        <div class="divison50">
             <div class="panel">
                 <div class="panel-head">
                     <div class="input-nav">
@@ -492,7 +495,7 @@
                 </div>
             </div>
         </div>
-        <div class="divison25">
+        <div class="divison50">
             <div class="panel">
                 <div class="panel-head">
                     <div class="input-nav">
