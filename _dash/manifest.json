@@ -1,0 +1,44 @@
+{
+    "short_name": "Decis\u00f5es & Solu\u00e7\u00f5es",
+    "name": "Decis\u00f5es & Solu\u00e7\u00f5es",
+    "icons": [
+        {
+            "src": "assets/icons/192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/icons/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "assets/icons/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "start_url": "index.php",
+    "background_color": "#0c5647",
+    "orientation": "portrait-primary",
+    "display": "standalone",
+    "theme_color": "#b19859",
+    "description": "Decisões & Soluções - Gaia Douro",
+    "prefer_related_applications": false,
+    "screenshots": [
+        {
+          "src": "assets/icons/screan_540x720.png",
+          "type": "image/png",
+          "sizes": "540x720",
+          "form_factor": "narrow"
+        },
+        {
+          "src": "assets/icons/screan_720x540.png",
+          "type": "image/jpg",
+          "sizes": "720x540",
+          "form_factor": "wide"
+        }
+      ]
+}
+
