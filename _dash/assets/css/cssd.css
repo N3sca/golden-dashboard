@@ -300,7 +300,7 @@ nav i{
 .navbar-brand {
     color: var(--white);
     font-size: 20px;
-    font-weight: 550;
+    font-weight: 600;
 }
 
 .navbar-brand span {
@@ -412,7 +412,8 @@ nav i{
     display: block;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 2em;
     color: var(--textcolor);
     text-align: left;
@@ -531,7 +532,7 @@ nav i{
     text-align: center;
     color: var(--textcolor);
     font-size: 1.30rem;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 0.025em;
     line-height: 38px;
     padding: 0 10px;
