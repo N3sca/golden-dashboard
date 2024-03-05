@@ -55,9 +55,6 @@
         <ul class="uls" id="uls">
             <li class="sidebar-item"><a href="#" class="" onclick="sidemenu('Dashboard1');bars();" aria-label="Dashboard">Dashboard</a></li>
             <li class="sidebar-item"><a href="#" class="" onclick="sidemenu('Revisao1');bars();" aria-label="Revisão">Revisão</a></li>
-            <li class="sidebar-item"><a href="#" class="" onclick="sidemenu('Insercao1');bars();" aria-label="Revisão">I. Ficha Cliente</a></li>
-            <li class="sidebar-item"><a href="#" class="" onclick="sidemenu('Insercao2');bars();" aria-label="Revisão">I. Apólices</a></li>
-            <li class="sidebar-item"><a href="#" class="" onclick="sidemenu('Insercao3');bars();" aria-label="Revisão">I. Créditos</a></li>
             <li class="sidebar-item"><a href="#" class="" onclick="sidemenu('BD1');bars();" aria-label="Revisão">B. Ficha Cliente</a></li>
             <li class="sidebar-item"><a href="#" class="" onclick="sidemenu('BD2');bars();" aria-label="Revisão">B. Utilidade</a></li>
             <li class="sidebar-item"><a href="#" class="" onclick="sidemenu('BD3');bars();" aria-label="Revisão">B. Tabelação</a></li>
@@ -419,7 +416,7 @@
                 <li><a href="#" aria-label="Dashboard">/ Inserção BD / Inserção Apólice</i></a></li>
             </ol>
         </div>
-    <div class="divison25">
+        <div class="divison25">
             <div class="panel">
                 <div class="panel-head"><h5><i class="fa-solid fa-folder-plus"></i> Inserção Apólice</h5></div>
             </div>
@@ -442,10 +439,10 @@
                             </tr>
                         </tbody>
                     </table>
-                    <input type="button" value="Verificar apolice" style="margin-top:15px;">
                 </div>
             </div>
         </div>
+
         <div class="divison50">
             <div class="panel">
                 <div class="panel-head">

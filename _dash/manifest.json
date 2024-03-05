@@ -22,6 +22,7 @@
     "start_url": "index.php",
     "background_color": "#0c5647",
     "orientation": "portrait-primary",
+    "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone",
     "theme_color": "#b19859",
     "description": "Decisões & Soluções - Gaia Douro",
