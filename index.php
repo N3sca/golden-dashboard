@@ -10,6 +10,17 @@
     //echo "<pre>";
     //print_r($_GET);
     //echo "</pre>";
+
+    try{
+        $string = "Database=webdevteste-database;Server=webdevteste-server.mysql.database.azure.com;User Id=odwwrnpfog;Password=38WKIU1WS86544F7$";
+        $server = new PDO($string,"root","");
+    }catch(PDOException $e){
+        if($_SERVER['HTTP_HOST'] == "localhost"){
+            die($e->getMessage());
+        }else{
+            die("Não foi possivel connectar com a Base de Dados");
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
