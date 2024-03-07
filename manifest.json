@@ -19,7 +19,7 @@
             "purpose": "maskable"
         }
     ],
-    "start_url": "index.php",
+    "start_url": "index.html",
     "background_color": "#0c5647",
     "orientation": "portrait-primary",
     "display_override": ["fullscreen", "minimal-ui"],
