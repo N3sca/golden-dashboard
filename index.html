@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Login">
 
-    <link rel="stylesheet" href="assets/css/cssl.css">
+    <link rel="stylesheet" href="assets/css/cssl.css"> 
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/N_gold_back_180x180.png">
     <link rel="apple-touch-icon" sizes="167x167" href="assets/icons/N_gold_back_167x167.png">
@@ -17,9 +17,11 @@
 
     <link rel="manifest" href="manifest.json">
 
-
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#b19859">
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/15f55d277b.js" crossorigin="anonymous"></script>
 
     <title>XPTOAF-BackOffice</title>
 </head>
@@ -33,18 +35,43 @@
         <h1>XPTOAF</h1>
         <br>
         <form action="" method="post" name="Login" id="Login">
-        <p>Username</p>
-        <input type="text" name="name" value="" placeholder="Enter Username">
-        <p>Password</p>
-        <input type="password" name="password" value="" placeholder="Enter Password">
-        <input type="submit" name="login" value="Login" onclick="t();return false;">
-        <a href="#">Lost your password?</a>
+        <p>Nome</p>
+        <input type="text" name="name" value="" placeholder="Nome de Utilizador">
+        <p>Palavra-passe</p>
+        <input type="password" name="password" value="" placeholder="Palavra-passe">
+        <input type="submit" name="login" value="Login" onclick="redirectt();return false;">
+        <a href="#">Perdes-te a password?</a>
         </form>
     </div>
+
+    <div class="popout">
+        <header>
+            <h2><i class="fa-solid fa-bookmark"></i> Project Preview</h2>
+        </header>
+            <video class="click" id="video" width="100%" height="auto" autoplay loop playsinline muted>
+                <source src="assets/img/example.mp4" type="video/mp4">
+            </video>
+        <div class="data">
+            <p> Click on video to fast preview the this awsome project <br><br><span> Is in <b>Portuguese</b> soo, have fun...</span></p>
+        </div>
+        <div class="buttons">
+            <button class="btn click" id="closebtn">Close</button>
+        </div>
+    </div>
+
+    <div id="videomodal" class="modal">
+        <span class="close" onclick="modalclose()">&times;</span>
+        <div class="modal-content">
+            <video class="click" id="video" width="100%" height="auto" controls>
+                <source src="assets/img/example.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="caption" class="imgalt">Golden Dashboard</div>
+    </div>
+
+    <script src="assets/js/thel.js"></script>
     <script>
-        function t(){
-            window.location.replace("dashboard.html");
-        }
+        window.addEventListener("load", executeCodes);
     </script>
 </body>
 </html>

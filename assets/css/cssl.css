@@ -1,21 +1,22 @@
-body {
+@font-face {
+    font-family: "Montserrat";
+    src: url('./Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body {
     background: url("../img/rose.webp") no-repeat;
     background-color: rgb(177, 152, 89);
     background-size: cover;
     background-attachment:fixed;
     background-position: center;
-    font-family: sans-serif;
-}
-:root{
-    --black: #000000;
-    --black2: #222222;
-    --white: #FFFFFF;
-    --white2: #e4e7ea;
-    --palette1: #B19859;
-    --palette1-2: #B19859a7;
-    --textcolor: #444444;
 }
 :root{
     --black: #000000;
@@ -24,19 +25,23 @@ body {
     --white2: #e4e7ea;
 
 
-    --palette1-1: #b19859 ; /*177, 152, 89  OR #1d5244*/ 
-    --palette1-2: #a08a54;
-
-    --palette2-1: #c5b8824d;
-    --palette2-2: #c5b882b3;
-
-    --palette3-1: #094136; 
-    --palette3-2: #0c5647;
+    --background1: #e4e7ea;
+    --background2: #FFFFFF;
+    --backgroundinverse1: #141414;
+    --backgroundinverse2: #000000;
 
 
-    --textcolor: #444444;
+    --color1: #333333;
+    --color2: #000000;
+    --colorinverse1: #e4e7ea;
+    --colorinverse2: #FFFFFF;
+
     --muted: #848586;
-    
+
+
+    --thecolor1: #b19859 ; /*177, 152, 89  OR #1d5244*/ 
+    --thecolor2: #a08a54;
+
     --theblue: #4285F4;
     --thegreen: #34A853;
     --thered: #EA4335;
@@ -46,8 +51,8 @@ body {
 .loginbox {
     width: 320px;
     height: 420px;
-    background: var(--black);
-    color: #ffffff;
+    background: var(--backgroundinverse1);
+    color: var(--colorinverse2);
     top: 50%;
     left: 50%;
     position: absolute;
@@ -60,6 +65,8 @@ body {
 .avatar {
     width: auto;
     height: 100px;
+    /*border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0);*/
     position: absolute;
     top: -10%;
     left: calc(30% + 12px);
@@ -85,13 +92,13 @@ h1 {
 }
 
 .loginbox input[type="text"],
-input[type="password"] {
+.loginbox input[type="password"] {
     border: none;
-    border-bottom: 1px solid var(--white2);
+    border-bottom: 1px solid var(--colorinverse2);
     background: transparent;
     outline: none;
     height: 40px;
-    color: var(--white2);
+    color: var(--colorinverse2);
     font-size: 16px;
 }
 
@@ -99,24 +106,159 @@ input[type="password"] {
     border: none;
     outline: none;
     height: 40px;
-    background: var(--palette1-1);
-    color: var(--white2);
+    background: var(--thecolor1);
+    color: var(--colorinverse2);
     font-size: 18px;
     border-radius: 20px;
 }
 
 .loginbox input[type="submit"]:hover {
     cursor: pointer;
-    background: var(--palette1-2);
+    background: var(--thecolor2);
 }
 
 .loginbox a {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: darkgrey;
+    color: var(--muted);
 }
 
 .loginbox a:hover {
-    color: var(--palette1-2);
+    color: var(--thecolor2);
+}
+
+/*-------------- Cokkies ---------------*/ 
+.popout {
+    position: fixed;
+    bottom: 50px;
+    right: -370px;
+    max-width: 345px;
+    width: 100%;
+    background: var(--backgroundinverse1);
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+    box-shadow: 0 0px 20px var(--thecolor1);
+    z-index: 2;
+  }
+.show {
+    right: 20px;
+  }
+  .popout header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 16px;
+  }
+  .popout header h2 {
+    color: var(--thecolor1);
+    font-weight: 700;
+    font-size: 28px;
+  }
+  .popout video{
+    margin-bottom: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .popout .data p {
+    color: var(--colorinverse1);
+    font-size: 16px;
+    text-align: left;
+  }
+  .popout .data p span {
+    color: var(--thecolor1);
+  }
+  .popout .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .popout .buttons .btn {
+    transform: none;
+    border: none;
+    color: var(--colorinverse2);
+    padding: 8px 0;
+    border-radius: 4px;
+    background: var(--thecolor1);
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+  }
+  .popout .buttons .btn:hover{
+    background-color: var(--thecolor2);
+  }
+  .popout .buttons .btn:active{
+    transform: translateY(1px);
+  }
+
+  /*-------------- MainProject Modal ---------------*/ 
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 5;
+    padding-top: 65px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 150vh;
+}
+.imgalt {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: var(--thecolor1);
+    font-weight: 700;
+    padding: 10px 0;
+    height: 150px;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.close:hover{
+    color: var(--thecolor1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-content, .imgalt {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
 }
