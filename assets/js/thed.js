@@ -61,11 +61,9 @@ function collapse_navbar(e){
     if(navbar.classList.contains('navbar-collapse')){
         navbar.classList.remove('navbar-collapse');
         navbarlinksm.classList.remove('navbar-links-collapse');
-        console.log('com mas agr sem');
     }else{
         navbar.classList.add('navbar-collapse');
         navbarlinksm.classList.add('navbar-links-collapse');
-        console.log('sem mas agr com');
     }
 }
 
@@ -76,3 +74,9 @@ it.addEventListener("scroll", (event) => {
         profile.classList.add("shadow-scroll");
     }else{profile.classList.remove("shadow-scroll"); console.log('else')}
 });
+
+
+function auto_grow(element) {
+    element.style.height = "5px";
+    element.style.height = ((element.scrollHeight)+1.59) + "px";
+}

@@ -54,9 +54,9 @@ h2{font-size: 38px;}
 h3{font-size: 28px;}
 h4{font-size: 20px;}
 h5{font-size: 16px; font-weight: 500;}
-p{font-size: 16px;font-weight: 400;}
-
-mark {
+p, td{font-size: 16px;font-weight: 400;}
+th{font-size: 16px; font-weight: 700;}
+mark{
     border-radius: 0.8em 0.3em;
     background: transparent;
     background-image: linear-gradient(
@@ -383,22 +383,37 @@ nav .links-mobile p{
 }
 .div-25{width: 25%;}.div-50{width: 50%;}.div-75{width: 75%;}.div-100{width: 100%;}
 .div-25, .div-50, .div-75, .div-100{float: left;padding: 5px;}
+.no-padding{padding: 0px !important;}
+
 .card{
     width: 100%;
     background-color: var(--background2);
     border-radius: 5px;
 
-
     box-shadow: 0 1px 1px rgba(0,0,0,0.5);
 
 }
 .card .head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+
     border-bottom: 1px solid #e8e8e8;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
+}
+.card .head img{
+    width: 40%;
+    height: auto;
+    transition: height 1s;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: top;
 }
 .card .body{
     padding: 10px;
@@ -415,6 +430,62 @@ nav .links-mobile p{
     background-color: var(--thecolor1);
     color: var(--colorinverse2);
 }
+
+.searchbar{
+    width: 100%;
+    background-color: var(--background2);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.no-border{
+    border: 0 !important;
+}
+
+input[type=button]{
+    outline: 0;
+    border: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: var(--colorinverse2);
+    border-radius: 3px;
+    background: var(--thecolor1);
+    font-weight: 600;
+    font-size: 15px;
+}
+input[type=button]:hover{
+    background: var(--thecolor2);
+    border-color: var(--thecolor2);
+}
+input[type=button]:active{
+    transform: translateY(1px);
+}
+input[type=text]{
+    outline: 0;
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: var(--background1);
+    font-weight: 600;
+    font-size: 15px;
+}
+.bigtext textarea{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(149,157,165,.3);
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+
+    font-size: 11pt;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+    color: var(--color1);
+}
 /*-------- MAIN AND UNIVERSAL DIVISONS--------*/
 
 
@@ -424,7 +495,16 @@ nav .links-mobile p{
     width: 100%;
     float: left;
 }
-.box .widget-panel{
+.box-on{
+    display: block !important;
+}
+.box-off{
+    display: none !important;
+}
+/*-------- box--------*/
+
+/*-------- box dashboard --------*/
+#dashboard .widget-panel{
     width: 100%;
     float: left;
 
@@ -434,44 +514,104 @@ nav .links-mobile p{
     padding: 10px;
     margin-bottom: 10px;
 }
-.box .widget-panel .panel{
+#dashboard .widget-panel .panel{
     float: left;
     align-items: center;
     text-align: center;
 
     padding: 10px;
 }
-.box .widget-panel .border-rigth{border-right: 1px solid #e8e8e8;}
-.box .widget-panel .border-left{border-left: 1px solid #e8e8e8;}
+#dashboard .widget-panel .border-rigth{border-right: 1px solid #e8e8e8;}
+#dashboard.widget-panel .border-left{border-left: 1px solid #e8e8e8;}
 .widget-blue{color: var(--theblue);}.widget-green{color: var(--thegreen);}.widget-orange{color: var(--orange);}.widget-red{color: var(--thered);}
-.box .widget-panel .panel i{
+#dashboard .widget-panel .panel i{
     font-size: 40px;
     margin-bottom: 10px;
 }
-.box .widget-panel .panel h3{
+#dashboard .widget-panel .panel h3{
     color: var(--color1);
     font-weight: 600;
 }
-.box .widget-panel .panel p{
+#dashboard .widget-panel .panel p{
     color: var(--muted);
     font-weight: bold;
     text-transform: uppercase;
 }
+/*-------- box dashboard --------*/
 
-.box-on{
-    display: block !important;
+
+
+
+
+/*-------- box profile --------*/
+#basedados1 .card .basedados1-profile-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
 }
-.box-off{
-    display: none !important;
+#basedados1 .eliminar{
+    background-color: red;
 }
-/*-------- box--------*/
-table {
+#basedados1 .aplicar{
+    background-color: green;
+}
+
+#basedados1 .card .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+#basedados1 .card .info .colum{
+    display: flex;
+    justify-content: space-between;
+}
+#basedados1 .card .info .colum .row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#basedados1 table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+}
+#basedados1 table th {
+    border-bottom: 2px solid #333333;
+    color: var(--color1);
+    padding: 10px;
+    text-transform: uppercase;
+}
+#basedados1 tbody td {
+    color: var(--color1);
+    padding: 10px;
+    border-bottom: 1px solid #b9babb;
+}
+
+#basedados1 .basedados1-infocard-none{
+    display: none;
+}
+#basedados1 .basedados1-infocard-on{
+    display: block;
+}
+/*-------- box profile --------*/
+
+
+
+
+
+/*-------- table--------*/
+.default-table table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
     font: normal 13px Arial, sans-serif;
+    text-align: center;
 }
-table th {
+.default-table table th {
     border: solid 1px #22222286;
     background-color: var(--thecolor1hover);
     color: var(--colorinverse2);
@@ -479,12 +619,13 @@ table th {
     text-align: center;
     text-transform: uppercase;
 }
-tbody td {
+.default-table tbody td {
     border: solid 1px #22222286;
     color: var(--color1);
     padding: 10px;
     text-align: left;
 }
+/*-------- table--------*/
 
 
 
@@ -497,6 +638,7 @@ tbody td {
     .main {padding-left: 20%;}
     .div-25{width: 50%;}
     .div-50, .div-75{width: 100%;}
+    #basedados1 .div-25{width: 100%;}
 }
 @media only screen and (max-width: 765px) {
     nav{
@@ -513,6 +655,7 @@ tbody td {
         display: none;
     }
     .main {padding-left: 0 !important; padding-top: 65px;}
+    #basedados1 table{text-align: center;}
 }
 /*-------- MEDIA SCREEN--------*/
 /*

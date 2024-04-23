@@ -22,7 +22,7 @@
     <meta name="theme-color" content="#b19859">
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="https://kit.fontawesome.com/15f55d277b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/885fd7a3fc.js" crossorigin="anonymous"></script>
 
     <title>XPTOAF-BackOffice</title>
 </head>
@@ -45,6 +45,7 @@
         <div class="links-mobile" id="nav-links-mobile">
             <p id="navbardashboard" box="dashboard" onclick="navbar_navigation(this);collapse_navbar();"><i class="fa-solid fa-dashboard"></i> Dahsboard</p>
             <p id="navbarrevisao" box="revisao" onclick="navbar_navigation(this);collapse_navbar();"><i class="fa-solid fa-triangle-exclamation"></i> Revisão</p>
+            <p id="navbarbasedados1" box="basedados1" onclick="navbar_navigation(this);collapse_navbar();"><i class="fa-solid fa-address-card"></i> Ficha Cliente</p>
         </div>
     </nav>
 
@@ -236,7 +237,7 @@
                     <div class="head">
                         <h4>Random XYZ</h4>
                     </div>
-                    <div class="body">
+                    <div class="body default-table">
                         <table>
                             <thead>
                                 <tr>
@@ -271,9 +272,9 @@
             <div class="div-50">
                 <div class="card">
                     <div class="head">
-                        <h4>Random ZYX</h4>
+                        <h4>Random XYZ</h4>
                     </div>
-                    <div class="body">
+                    <div class="body default-table">
                         <table>
                             <thead>
                                 <tr>
@@ -308,12 +309,88 @@
         </div>
 
         <div class="box box-off" id="basedados1">
-            <div class="div-50">
-                <div class="card">
-                    <div class="head">
-                        <h4>Random XYZ</h4>
+            <div class="div-100">
+                <div class="searchbar">
+                    <input type="text" name="" id="searchbar-basedados1">
+                    <input type="button" value="Procurar">
+                </div>
+            </div>
+            <div class="div-100 no-padding">
+                <div class="div-25">
+                    <div class="card">
+                        <div class="head">
+                            <img src="assets/img/pic.jpg" alt="">
+                            <h4>Gaspar Lopes</h4>
+                            <h5><mark>&nbsp;Cliente&nbsp;</mark></h5>
+                        </div>
+                        <div class="body no-border basedados1-profile-buttons">
+                            <input type="button" class="editar" value="Editar">
+                            <input type="button" class="eliminar" value="Eliminar">
+                            <input type="button" class="aplicar" value="Aplicar">
+                        </div>
                     </div>
-                    <div class="body">
+                    <div class="div-100 no-padding" style="margin-top: 10px;">
+                        <div class="card">
+                            <div class="body no-border">
+                                <table>
+                                    <tr>
+                                        <td>ID</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NIF</td>
+                                        <td>6665233541</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-100 no-padding" style="margin-top: 10px;">
+                        <div class="card">
+                            <div class="body center">
+                                <h4  style="margin-bottom: 0;"><i class="fa-solid fa-circle-check"></i> Contactado</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-75">
+                    <div class="card">
+                        <div class="body no-border">
+                            <table>
+                                <tr>
+                                    <td>Data Nascimento</td>
+                                    <td>27/03/2003</td>
+                                </tr>
+                                <tr>
+                                    <td>Contacto</td>
+                                    <td>941256328</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Melcior.gaspar@reis.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Morada</td>
+                                    <td>Algures no Deserto</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-75">
+                    <div class="card">
+                        <div class="body">
+                            <h4>Observações</h4>
+                            <div class="bigtext">
+                                <textarea name="" id="" rows="1" placeholder="Insira Aqui" oninput="auto_grow(this)"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-50 basedados1-infocard-on">
+                <div class="card">
+                    <div class="body no-border">
                         <table>
                             <thead>
                                 <tr>
@@ -345,6 +422,71 @@
                     </div>
                 </div>
             </div>
+            <div class="div-50 basedados1-infocard-on">
+                <div class="card">
+                    <div class="body no-border">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>NIF</th>
+                                    <th>Random XYZ</th>
+                                    <th>Data C.</th>
+                                    <th>Data R.</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>616465464</td>
+                                <td>x</td>
+                                <td>2025/04/02</td>
+                                <td>2025/04/02</td>
+                            </tr>
+                            <tr>
+                                <td>616465464</td>
+                                <td>x</td>
+                                <td>2025/04/02</td>
+                                <td>2025/04/02</td>
+                            </tr>
+                            <tr>
+                                <td>616465464</td>
+                                <td>x</td>
+                                <td>2025/04/02</td>
+                                <td>2025/04/02</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+            <div class="div-50 basedados1-infocard-none">
+                <div class="card">
+                    <div class="head">
+                        <h4>Random XYZ</h4>
+                    </div>
+                    <div class="body no-border">
+                        <table>
+                            <tr>
+                                <td>NIF</td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Random XYZ</td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Data C.</td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Data R.</td>
+                                <td><input type="text" name="" id=""></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -352,10 +494,77 @@
 
 
         <div class="box box-off" id="basedados2">
-            <div class="div-100">
+            <div class="div-50">
                 <div class="card">
                     <div class="head">
-                        <h4>basedados2</h4>
+                        <h4>Random XYZ</h4>
+                    </div>
+                    <div class="body default-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>NIF</th>
+                                    <th>Random XYZ</th>
+                                    <th>Random ZYX</th>
+                                    <th>Data R.</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>616465464</td>
+                                <td>x</td>
+                                <td>y</td>
+                                <td>2025/04/02</td>
+                            </tr>
+                            <tr>
+                                <td>616465464</td>
+                                <td>x</td>
+                                <td>y</td>
+                                <td>2025/04/02</td>
+                            </tr>
+                            <tr>
+                                <td>616465464</td>
+                                <td>x</td>
+                                <td>y</td>
+                                <td>2025/04/02</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="div-50">
+                <div class="card">
+                    <div class="head">
+                        <h4>Random XYZ</h4>
+                    </div>
+                    <div class="body default-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>NIF</th>
+                                    <th>Random XYZ</th>
+                                    <th>Random ZYX</th>
+                                    <th>Data R.</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>616465464</td>
+                                <td>x</td>
+                                <td>y</td>
+                                <td>2025/04/02</td>
+                            </tr>
+                            <tr>
+                                <td>616465464</td>
+                                <td>x</td>
+                                <td>y</td>
+                                <td>2025/04/02</td>
+                            </tr>
+                            <tr>
+                                <td>616465464</td>
+                                <td>x</td>
+                                <td>y</td>
+                                <td>2025/04/02</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
